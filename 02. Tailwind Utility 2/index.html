@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Belajar TailwinCSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            spacing: {
+              13: "3.25rem",
+            },
+            fontFamily: {
+              inter: ["Inter"],
+            },
+            colors: {
+              kopi: "#c0ffee",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div>
+      <div
+        class="py-4 text-xl text-center capitalize border-b border-b-slate-500 font-Inter"
+      >
+        Ini adalah awal dari
+        <span class="font-bold text-blue-800">talwind utility 2</span>
+      </div>
+    </div>
+
+    <!-- 
+      Backgroud Attachment :
+        bg-scroll -> gambar diem,text scroll
+        bg-local  -> gambar dan text scroll
+        bg-fixed  -> gambar fixed tulisan scroll
+    -->
+    <div
+      class="max-w-xl mx-auto mt-[42px] h-96 bg-[#bada55] overflow-y-scroll bg-fixed"
+      style="
+        background-image: url('https://source.unsplash.com/1000x600?computer');
+      "
+    >
+      <p class="p-5 text-2xl text-white">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+        molestiae. Incidunt velit explicabo minima, id libero cum possimus
+        voluptate itaque nihil nulla debitis iure repellat quae assumenda dolore
+        amet enim recusandae natus earum neque similique suscipit? Laudantium
+        cupiditate inventore, non provident fugit repellendus alias dolor
+        doloremque iste ipsam eos, et porro soluta repellat odit, consequuntur
+        nostrum odio? Repudiandae, libero dolorum dolorem eos consequuntur
+        aperiam laborum molestias alias vero reiciendis delectus, iure eaque!
+        Dignissimos sint nam atque voluptates iste iusto vero voluptas
+        cupiditate perspiciatis molestias voluptate nulla esse ex, maiores
+        mollitia quo doloribus? Placeat perspiciatis architecto harum minus
+        saepe, quidem adipisci eveniet! Recusandae et molestiae quod nisi fugit
+        quidem amet hic, dicta, sed ipsa odit nam! Officiis illum excepturi
+        nobis assumenda accusamus nisi cum! Nisi obcaecati quas quo ex sed quae,
+        distinctio deserunt esse excepturi voluptatum illo repellat. Doloribus
+        odit repellendus ipsum obcaecati, autem labore unde fuga sed
+        necessitatibus incidunt eveniet? Veritatis cum, ea iure architecto
+        exercitationem porro itaque assumenda voluptate id aliquam autem
+        accusamus atque. Magni ipsam omnis sit ducimus, dolores, pariatur ab
+        necessitatibus alias temporibus molestias culpa officiis perferendis quo
+        quidem recusandae suscipit? Ea quam quasi quidem velit fuga asperiores
+        accusantium dicta sed suscipit officiis hic consequuntur, illum aperiam!
+      </p>
+    </div>
+
+    <!-- 
+
+      Background Size :
+        bg-auto	    -> kalo gambarnya lebih gede kepotong
+        bg-cover	  -> gambar selalu ditampilkan penuh
+        bg-contain	-> gambar akan memenuhi salah satu sisi
+
+      Background Repeat :
+        bg-repeat	       -> kalo gambar lebih kecil nanti bakal berulang
+        bg-no-repeat	   -> gambar lebih kecil ga berulang
+        bg-repeat-x	     -> gambar berulang di sumbu x
+        bg-repeat-y	     -> gambar berulang di sumbu y
+        bg-repeat-round	 -> gambar berulang melingkar
+        bg-repeat-space	 -> gambar berulang space;
+
+      Background Position :
+        bg-bottom	        -> bottom;
+        bg-center	        -> center;
+        bg-left	          -> left;
+        bg-left-bottom	  -> left bottom;
+        bg-left-top	      -> left top;
+        bg-right	        -> right;
+        bg-right-bottom	  -> right bottom;
+        bg-right-top	    -> right top;
+        bg-top	          -> top;
+
+     -->
+    <div
+      class="max-w-xl mx-auto mt-32 overflow-hidden bg-blue-300 bg-center bg-no-repeat bg-contain shadow-lg h-96 rounded-br-2xl rounded-tl-2xl shadow-slate-500 bg-blend-multiply"
+      style="background-image: url('img/1.jpg')"
+    >
+      <!-- <div class="w-full h-full bg-blue-200 mix-blend-multiply"></div> -->
+    </div>
+
+    <div class="mt-80"></div>
+  </body>
+</html>
